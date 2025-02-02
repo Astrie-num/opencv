@@ -1,10 +1,10 @@
 from pyzbar.pyzbar import decode
 from PIL import Image
 
-image_path = "image4.jpg"  # Change this to your file path
+image_path = "image4.jpg" 
 
 image = Image.open(image_path)
-decoded_objects = decode(image)
+decoded = decode(image)
 
-for obj in decoded_objects:
+for obj in decoded:
     print("Decoded Data:", obj.data.decode("utf-8"))
