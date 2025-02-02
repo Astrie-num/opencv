@@ -7,7 +7,7 @@ import zxing
 reader = zxing.BarCodeReader()
 
 # Load the Aztec code image
-image_path = "image5.jpg"  # Replace with your image path
+image_path = "image5.jpg" 
 image = cv2.imread(image_path)
 
 # Decode the Aztec code using ZXing
