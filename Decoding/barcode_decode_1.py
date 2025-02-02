@@ -28,7 +28,7 @@ for barcode in barcodes:
     cv2.putText(image, data, (int(x), int(y) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)  # Bigger text
 
 # Display the image with the barcode highlighted and annotated
-cv2.imshow("Barcode with Annotation", image)
+cv2.imshow("Barcode ", image)
 
 # Wait for a key press
 key = cv2.waitKey(0)
@@ -36,6 +36,6 @@ key = cv2.waitKey(0)
 # Save the annotated image when a key is pressed
 output_file = "decoded_barcode_expanded.png"
 cv2.imwrite(output_file, image)
-print(f"Annotated image saved as {output_file}")
+print(f"Image saved as {output_file}")
 
 cv2.destroyAllWindows()
